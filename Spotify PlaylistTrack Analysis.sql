@@ -41,97 +41,21 @@ CREATE TABLE PlaylistTracks (
 -- Insert values into Users table
 INSERT INTO Users (user_id, username, email, password, registration_date)
 VALUES
-  (1, 'Riyan', 'Riyan@gmail.com', 'password123', '2022-01-10'),
-  (2, 'Sanjay', 'Sanjay@yahoo.com', 'password456', '2022-02-15'),
-  (3, 'Amit', 'Amit@gmail.com', 'password789', '2022-03-20'),
-  (4, 'Sheetal', 'Sheetal@yahoo.com', 'password12', '2022-04-25'),
-  (5, 'Maahir', 'Maahir@gmail.com', 'password34', '2022-05-30'),
-  (6, 'Prayan', 'Prayan@gmail.com', 'password56', '2022-06-05'),
-  (7, 'Samarth', 'Samarth@yahoo.com', 'password78', '2022-07-10'),
-  (8, 'Briti', 'Briti@yahoo.com', 'password90', '2022-08-15'),
-  (9, 'Aabheri', 'Aabheri@gmail.com', 'password123', '2022-09-20'),
-  (10, 'Anvika', 'Anvika@yahoo.com', 'password12', '2022-10-25');
 
 -- Insert values into Playlists table
 INSERT INTO Playlists (playlist_id, playlist_name, user_id, created_at)
 VALUES
-  (1, 'My Favorites', 1, '2022-01-15'),
-  (2, 'Road Trip Mix', 2, '2022-02-20'),
-  (3, 'Party Hits', 3, '2022-03-25'),
-  (4, 'Relaxing Melodies', 4, '2022-04-30'),
-  (5, 'Late Night Vibes', 5, '2022-05-05'),
-  (6, 'Workout Pump', 6, '2022-06-10'),
-  (7, 'Chill Beats', 7, '2022-07-15'),
-  (8, 'Study Jams', 8, '2022-08-20'),
-  (9, 'Throwback Tunes', 9, '2022-09-25'),
-  (10, 'Weekend Grooves', 10, '2022-10-30');
 
+  
 -- Insert values into Tracks table
 INSERT INTO Tracks (track_id, track_name, artist_name, album_name, duration, release_date)
 VALUES
-  (1, 'Shape of You', 'Ed Sheeran', 'Ã· (Divide)', 233, '2017-01-06'),
-  (2, 'Blinding Lights', 'The Weeknd', 'After Hours', 200, '2019-11-29'),
-  (3, 'Dance Monkey', 'Tones and I', 'The Kids Are Coming', 209, '2019-08-29'),
-  (4, 'Bad Guy', 'Billie Eilish', 'When We All Fall Asleep, Where Do We Go?', 194, '2019-03-29'),
-  (5, 'Rockstar', 'Post Malone ft. 21 Savage', 'Beerbongs & Bentleys', 218, '2017-09-15'),
-  (6, 'Happier', 'Ed Sheeran', 'Ã· (Divide)', 207, '2017-01-06'),
-  (7, 'Save Your Tears', 'The Weeknd', 'After Hours', 223, '2019-11-29'),
-  (8, 'Never Seen the Rain', 'Tones and I', 'The Kids Are Coming', 186, '2019-08-29'),
-  (9, "When the Party's Over", 'Billie Eilish', 'When We All Fall Asleep', 194, '2019-03-29'),
-  (10, 'Circles', 'Post Malone', "Hollywood's Bleeding", 215, '2019-09-03'),
-  (11, 'Thinking Out Loud', 'Ed Sheeran', 'x', 281, '2014-06-20'),
-  (12, "Can't Feel My Fac", 'The Weeknd', 'Beauty Behind the Madness', 213, '2015-06-08'),
-  (13, 'Dance Monkey', 'Tones and I', 'The Kids Are Coming', 209, '2019-08-29'),
-  (14, 'Ocean Eyes', 'Billie Eilish', "Don't Smile at Me", 180, '2016-11-18'),
-  (15, 'Sunflower', 'Post Malone ft. Swae Lee', 'Spider-Man: Into the Spider-Verse', 158, '2018-10-18'),
-  (16, 'Photograph', 'Ed Sheeran', 'x', 258, '2014-06-20'),
-  (17, 'Starboy', 'The Weeknd ft. Daft Punk', 'Starboy', 230, '2016-11-24'),
-  (18, 'Dance Monkey', 'Tones and I', 'The Kids Are Coming', 209, '2019-08-29'),
-  (19, 'Lovely', 'Billie Eilish ft. Khalid', '13 Reasons Why (Season 2)', 200, '2018-04-19'),
-  (20, 'Better Now', 'Post Malone', 'Beerbongs & Bentleys', 231, '2018-04-27');
-
+  
   
 -- Insert values into PlaylistTracks table
 INSERT INTO PlaylistTracks (playlist_id, track_id, position)
 VALUES
-  (1, 1, 1),
-  (1, 2, 2),
-  (1, 3, 3),
-  (1, 11, 4),
-  (1, 13, 5),
-  (2, 4, 1),
-  (2, 5, 2),
-  (2, 12, 3),
-  (2, 14, 4),
-  (3, 1, 1),
-  (3, 3, 2),
-  (3, 5, 3),
-  (4, 2, 1),
-  (4, 4, 2),
-  (5, 1, 1),
-  (5, 3, 2),
-  (5, 5, 3),
-  (5, 15, 4),
-  (5, 16, 5),
-  (5, 17, 6),
-  (6, 2, 1),
-  (6, 4, 2),
-  (7, 1, 1),
-  (7, 5, 2),
-  (7, 18, 3),
-  (8, 3, 1),
-  (8, 4, 2),
-  (9, 1, 1),
-  (9, 2, 2),
-  (9, 3, 3),
-  (9, 4, 4),
-  (9, 5, 5),
-  (9, 19, 6),
-  (9, 20, 7),
-  (10, 1, 1),
-  (10, 3, 2),
-  (10, 5, 3);
-
+  
 select * from users;
 select * from Playlists;
 select * from Tracks;
